@@ -1,0 +1,1 @@
+# waiyantech.github.io
