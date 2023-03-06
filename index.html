@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="styles.css" rel="stylesheet">
+
+        
+
+        <title>My Webpage</title>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/default-monochrome-white.svg" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header-text">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+            </div>
+        </div>
+
+        <!-----------------header text---------------->
+        <section id="header-text" class="header-text">
+            <div>
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span>Wai Yan</span><br>from Myanmar</h1>
+            </div>
+            <div class="content">
+                <div id="content-img">
+                    <img src="images/profile.jpeg" alt="">
+                </div>
+                <div class="icon">
+                    <a href="https://www.facebook.com/chit.ya.58152559"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://join.skype.com/invite/tp8h0liNqLqk"><i class="fa-brands fa-skype"></i></a>
+                    <a href="https://www.instagram.com/wai_yan_11.26/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/thisiswaiyan"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/wai-yan-79518319a/"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!--------------------about------------------->
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about_col_1">
+                        <img src="images/user.png">
+                    </div>
+                    <div class="about_col_2">
+                        <h1 class="sub_title">About Me</h1>
+                        <p class="p_font">Hey! Welcome to My portfolio webpage. My name is Wai Yan Tun. You can call me Wai Yan. 
+                            I got a degree in Bachelor of Engineering (Mechatronics) at 2020. And then I tried to change my career to IT field which I'm passionate about. 
+                            Now, I’m attending CS50's Computer Science and trying to become a Software Engineer that is related to AI.   
+                            So, I learned by myself computer science from CS50’s Harvard. I also learned the courses from Coursera, Udemy, Freecodecamp and so on.
+                            If you can't solve with the CS50's problem sets or assignments, just try to contact me. Let's find out together.
+                            Thanks for the visiting.</p>
+                        <div class="tab_titles">
+                            <p class="tab_links active_link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab_links" onclick="opentab('languages')">Languages</p>
+                            <p class="tab_links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab_contents active_tab" id="skills">
+                            <ul>
+                                <li><span class="subject">Python</span><br><span class="star_checked"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span></li>
+                                <li><span class="subject">Linux</span><br><span class="star_checked"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span></li>
+                                <li><span class="subject">C</span><br><span class="star_checked"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span><span class="star_unchecked"><i class="fa-solid fa-star"></i></span></li>
+                                <li><span class="subject">Machine Learning</span><br><span class="star_checked"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span><span class="star_unchecked"><i class="fa-solid fa-star"></i></span></li>
+                                <li><span class="subject">HTML, CSS, Javascript</span><br><span class="star_checked"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span><span class="star_unchecked"><i class="fa-solid fa-star"></i></span></li>
+                            </ul>
+                        </div>
+                        <div class="tab_contents" id="languages">
+                            <ul>
+                                <li><span class="subject">Burmese</span><br><span class="language_level">Native</span></li>
+                                <li><span class="subject">Japanese</span><br><span class="language_level">Fluent</span></li>
+                                <li><span class="subject">English</span><br><span class="language_level">Conversational</span></li>
+                                <li><span class="subject">Korean</span><br><span class="language_level">Lower Intermediate</span></li>
+                            </ul>
+                        </div>
+                        <div class="tab_contents" id="education">
+                            <ul>
+                                <li><span class="education_year">2013 ~ 2019</span><br><span class="certificate">Bachelor of Engineering (Mechatronics)</span></li>
+                                <li><span class="education_year">2021</span><br><span class="certificate">Machine Learing (Coursera)</span></li>
+                                <li><span class="education_year">2022</span><br><span class="certificate">Python Programming (Udemy)</span></li>
+                                <li><span class="education_year">2022</span><br><span class="certificate">CS50’s Computer Science</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-----------------projects------------------->
+        <section id="projects">
+            <div class="container">
+                <h1>Projects</h1>
+                <div class="projects_img">
+                    <div class="each_project">
+                        <img src="images/speller.jpg" alt="">
+                        <div class="overlay">
+                            <a href="https://github.com/code50/111344227/tree/main/speller"><h3>SPELLER</h3></a>
+                            <p>C</p>
+                        </div>
+                    </div>
+                    <div class="each_project">
+                        <img src="images/dna.jpg" alt="">
+                        <div class="overlay">
+                            <a href="https://github.com/code50/111344227/blob/main/dna/dna.py"><h3>DNA</h3></a>
+                            <p>Python</p>
+                        </div>
+                    </div>
+                    <div class="each_project">
+                        <img src="images/movies.jpg" alt="">
+                        <div class="overlay">
+                            <a href="https://github.com/code50/111344227/tree/main/movies"><h3>MOVIES</h3></a>
+                            <p>SQLite query</p>
+                        </div>
+                    </div>
+                    <div class="each_project">
+                        <img src="images/filter.jpg" alt="">
+                        <div class="overlay">
+                            <a href="https://github.com/code50/111344227/tree/main/filter-less"><h3>FILTER</h3></a>
+                            <p>C</p>
+                        </div>
+                    </div>
+                    <div class="each_project">
+                        <img src="images/runoff.jpg" alt="">
+                        <div class="overlay">
+                            <a href="https://github.com/code50/111344227/blob/main/runoff/runoff.c"><h3>RUNOFF</h3></a>
+                            <p>C</p>
+                        </div>
+                    </div>
+                    <div class="each_project">
+                        <img src="images/readability.jpg" alt="">
+                        <div class="overlay">
+                            <a href="https://github.com/code50/111344227/blob/main/readability/readability1.c"><h3>READABILITY</h3></a>
+                            <p>Python & C</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-----------------contact-------------------->
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact_left">
+                        <h1 class="sub_title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> waiyan.forjob@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i> +959776757812</p>
+                        <a href="" class="btn">Download CV <i class="fa-solid fa-download"></i></a>
+                    </div>
+                    <div class="contact_right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="text" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab_links")
+        var tabcontents = document.getElementsByClassName("tab_contents")
+        
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active_link");
+            }
+
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active_tab");
+            }
+
+            event.currentTarget.classList.add("active_link");
+            document.getElementById(tabname).classList.add("active_tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "-150px";
+        }
+
+        function closemenu() {
+            sidemeu.style.right = "-400px";
+        }
+
+    </script>
+
+    <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxTx-WPKDvFngRVfSqno2ObJc9a81Z_-VF55RpY1ZFB97_dUSUY064Jgm93PUaoabIKRQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg =document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function() {
+                msg.innerHTML=""
+            },5000);
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+    </script>
+    </body>
+</html>
