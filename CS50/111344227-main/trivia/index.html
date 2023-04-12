@@ -8,34 +8,9 @@
         <script>
             // TODO: Add code to check answers to questions
             document.addEventListener('DOMContentLoaded', function() {
-                let right = document.querySelector('#right');
-                let feedback = document.querySelector('p');
-                right.addEventListener('click', function() {
-                    right.style.color = "green";
-                    feedback.innerHTML = "Correct";
-                });
-
-                let wrong = document.querySelectorAll('#wrong');
-                for (let i = 0; i < wrong.length; i++) {
-                    wrong[i].addEventListener('click', function() {
-                        wrong[i].style.color = "red";
-                        feedback.innerHTML = "Incorrect";
-                    });
-                };
-
-                document.querySelector('#confirm').addEventListener('click', function() {
-                    let input = document.querySelector('#answer');
-                    let check_ans = document.querySelector('p');
-                    if (input.value == "Yor Forger" || input.value == "yor forger")
-                    {
-                        check_ans.innerHTML = 'Correct';
-                        check_ans.style.color = "green";
-                    }
-                    else
-                    {
-                        check_ans.innerHTML = 'Incorrect';
-                        check_ans.style.color = "red";
-                    }
+                document.querySelector('h3').addEventListener('click', function() {
+                    let button = document.querySelector('#right').value;
+                    alert('hello, ' + button);
                 });
             });
         </script>
@@ -51,11 +26,10 @@
                 <hr>
                 <!-- TODO: Add multiple choice question here -->
                     <h3>What is the capital city of Japan?</h3>
-                    <button id="wrong">Hokkaido</button>
-                    <button id="wrong">Okinawa</button>
-                    <button id="right">Tokyo</button>
-                    <button id="wrong">Osaka</button>
-                    <p></p>
+                    <button id="right" type="button">Hokkaido</button>
+                    <button id="right" type="button">Okinawa</button>
+                    <button id="right" type="button">Tokyo</button>
+                    <button id="right" type="button">Osaka</button>
             </div>
 
             <div class="section">
@@ -63,9 +37,8 @@
                 <hr>
                 <!-- TODO: Add free response question here -->
                 <h3>What's the name of the Loid Forger's wife?</h3>
-                <input autocomplete="off" id="answer" type="text">
-                <button id="confirm">Check Answer</button>
-                <p></p>
+                <input autocomplete="off" type="text">
+                <button type="submit">Check Answer</button>
             </div>
         </div>
     </body>

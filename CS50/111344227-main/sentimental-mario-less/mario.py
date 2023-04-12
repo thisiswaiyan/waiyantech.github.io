@@ -10,6 +10,7 @@ def main():
             print("#",end="")
         print()
 
+
 def get_height():
     while True:
         try:
@@ -18,5 +19,6 @@ def get_height():
                 return n
         except ValueError:
             print("Not an integer.")
+
 
 main()
