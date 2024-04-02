@@ -58,12 +58,28 @@
                     </div>
                     <div class="about_col_2">
                         <h1 class="sub_title">About Me</h1>
-                        <p class="p_font">Hey! Welcome to My portfolio webpage. My name is Wai Yan Tun. You can call me Wai Yan. 
-                            I got a degree in Bachelor of Engineering (Mechatronics) at 2020. And then I tried to change my career to IT field which I'm passionate about. 
-                            Now, I’m attending CS50's Computer Science and trying to become a Software Engineer that is related to AI.   
-                            So, I learned by myself computer science from CS50’s Harvard. I also learned the courses from Coursera, Udemy, Freecodecamp and so on.
-                            If you can't solve with the CS50's problem sets or assignments, just try to contact me. Let's find out together.
-                            Thanks for the visiting.</p>
+                        <div class="tab_paragraph">
+                            <p class="paragraph_links active_plink" onclick="opencontent('english')">English</p>
+                            <p class="paragraph_links" onclick="opencontent('japanese')">日本語</p>
+                        </div>
+                        <div class="paragraph_contents active_para_content" id="english">
+                            <p class="p_font">Hey! Welcome to My portfolio webpage. My name is Wai Yan Tun. You can call me Wai.
+                                I got a degree in Bachelor of Engineering (Mechatronics) at 2020. And then I tried to change my career to IT field which I'm passionate about.
+                                As a first step, I work at UTS-Myanmar as a programmer at 2022. And at the early of 2023, I started attending an international online class
+                                at Harvard University, one the largest university in the world. While I was attending the class, on the other hand, I worked as a freelancer in local project.
+                                But nowadays, AI and LLM are in vogue, I also have acquired the frameworks such as Pytorch, Numpy, Pandas, Scikit-learn, Keras, LangChain, LlamaIndex and so on.
+                                And then, I have participated in AI hacktathon and seminars. Currently, I'm learning Spring, Thymeleaf, JDBCTemplate, Java.
+                                Thanks for the visiting.
+                            </p>
+                        </div>
+                        <div class="paragraph_contents" id="japanese">
+                            <p class="p_font">ようこそ。私の名前はウェイヤントンと申します。ウェイとお呼びください。 2020年に工学士（メカトロニクス）を卒業致しました。その後、情熱を持っているIT分野にキャリアを変えようとしました。
+                                第一歩として、2022年にUTS-Myanmarでプログラマーとして働きました。そして、2023年の初めには、ハーバード大学の国際オンラインクラスに参加し始めました。
+                                授業を受けながら、一方でフリーランスとして現地のプロジェクトに携わりました。しかし、AIやLLMが流行して来て、Pytorch、Numpy、Pandas、Scikit-learn、Keras、LangChain、LlamaIndexなどのフレームワークも学習致しました。
+                                また、AIハッカソンやセミナーに参加しました。現在はSpring, Thymeleaf, JDBCTemplate, Javaを勉強しています。
+                                ご訪問ありがとうございました。
+                            </p>
+                        </div>
                         <div class="tab_titles">
                             <p class="tab_links active_link" onclick="opentab('skills')">Skills</p>
                             <p class="tab_links" onclick="opentab('languages')">Languages</p>
@@ -105,45 +121,30 @@
                 <h1>Projects</h1>
                 <div class="projects_img">
                     <div class="each_project">
-                        <img src="images/speller.jpg" alt="">
+                        <img src="images/Image_recognition.jpg" alt="">
                         <div class="overlay">
-                            <a href="https://github.com/thisiswaiyan/waiyantech.github.io/tree/main/CS50/111344227-main/speller"><h3>SPELLER</h3></a>
-                            <p>C</p>
+                            <a href="https://github.com/thisiswaiyan/MachineLearning/blob/main/keras_test.py"><h3>Image Recognition</h3></a>
+                            <p>Python</p>
                         </div>
                     </div>
-                    <div class="each_project">
-                        <img src="images/dna.jpg" alt="">
+                    <div class="each_project1">
+                        <img src="images/stocks.jpg" alt="">
                         <div class="overlay">
-                            <a href="https://github.com/thisiswaiyan/waiyantech.github.io/tree/main/CS50/111344227-main/dna"><h3>DNA</h3></a>
+                            <a href="https://github.com/thisiswaiyan/waiyantech.github.io/tree/main/CS50/111344227-main/finance"><h3>Stocks</h3></a>
                             <p>Python</p>
                         </div>
                     </div>
                     <div class="each_project">
-                        <img src="images/movies.jpg" alt="">
+                        <img src="images/aihackathon.jpg" alt="">
                         <div class="overlay">
-                            <a href="https://github.com/thisiswaiyan/waiyantech.github.io/tree/main/CS50/111344227-main/movies"><h3>MOVIES</h3></a>
-                            <p>SQLite query</p>
+                            <a href="https://lablab.ai/event/truera-challenge-build-llm-applications/futuretech-mavericks"><h3>AI Hackathon</h3></a>
+                            <p>Python</p>
                         </div>
                     </div>
-                    <div class="each_project">
-                        <img src="images/filter.jpg" alt="">
-                        <div class="overlay">
-                            <a href="https://github.com/thisiswaiyan/waiyantech.github.io/tree/main/CS50/111344227-main/filter-less"><h3>FILTER</h3></a>
-                            <p>C</p>
-                        </div>
-                    </div>
-                    <div class="each_project">
-                        <img src="images/runoff.jpg" alt="">
-                        <div class="overlay">
-                            <a href="https://github.com/thisiswaiyan/waiyantech.github.io/blob/main/CS50/111344227-main/runoff/runoff.c"><h3>RUNOFF</h3></a>
-                            <p>C</p>
-                        </div>
-                    </div>
-                    <div class="each_project">
-                        <img src="images/readability.jpg" alt="">
-                        <div class="overlay">
-                            <a href="https://github.com/thisiswaiyan/waiyantech.github.io/blob/main/CS50/111344227-main/readability/readability1.c"><h3>READABILITY</h3></a>
-                            <p>Python & C</p>
+                    <div class="each_project1">
+                        <img src="images/kaisha.jpg" alt="">
+                        <div class="overlay"><h3>Labor Management</h3>
+                            <p>C/C++</p>
                         </div>
                     </div>
                 </div>
@@ -157,12 +158,12 @@
                         <h1 class="sub_title">Contact Me</h1>
                         <p><i class="fa-solid fa-paper-plane"></i> waiyan.forjob@gmail.com</p>
                         <p><i class="fa-solid fa-square-phone"></i> +959776757812</p>
-                        <a href="images/Wai's Resume.pdf" download class="btn">Download CV <i class="fa-solid fa-download"></i></a>
+                        <a href="images/ウェイ ヤン トン職務経歴書.pdf" download class="btn">Japanese CV <i class="fa-solid fa-download"></i></a>
                     </div>
                     <div class="contact_right">
                         <form name="submit-to-google-sheet">
                             <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="text" name="Email" placeholder="Your Email" required>
+                            <input name="Email" placeholder="Your Email" required type="text">
                             <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                             <button type="submit" class="btn">Submit</button>
                         </form>
@@ -171,6 +172,26 @@
                 </div>
             </div>
         </section>
+    <script>
+
+        var paragraphlinks = document.getElementsByClassName("paragraph_links")
+        var paragraphcontents = document.getElementsByClassName("paragraph_contents")
+
+        function opencontent(contentname) {
+            for (paragraph of paragraphlinks) {
+                paragraph.classList.remove("active_plink");
+            }
+
+            for (paragraphcontent of paragraphcontents) {
+                paragraphcontent.classList.remove("active_para_content");
+            }
+
+            event.currentTarget.classList.add("active_plink");
+            document.getElementById(contentname).classList.add("active_para_content");
+        }
+
+    </script>
+
     <script>
 
         var tablinks = document.getElementsByClassName("tab_links")
